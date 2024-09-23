@@ -12,6 +12,10 @@
         </x-slot:title>
     </h1>
 
+    <video width="320" height="240" loop autoplay>
+        <source src="../img/peter.mp4" type="video/mp4">
+      </video>
+
 
     <?php
     $size = count($brands);
