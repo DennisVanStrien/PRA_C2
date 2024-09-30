@@ -58,7 +58,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 footer{
     position: fixed;
     bottom: 0;
+    background-color:#343a40;
+    width: 100%;
+    color: white;
 }
+
 
 body {
     margin: 0;
