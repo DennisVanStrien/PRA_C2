@@ -65,6 +65,11 @@ footer{
     background-color:#343a40;
     width: 100%;
     color: white;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 
 
