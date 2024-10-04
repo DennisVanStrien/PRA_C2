@@ -67,9 +67,9 @@ footer{
     color: white;
     position: fixed;
     left: 0;
-    width: 100%;
-    color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -10044,4 +10044,10 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 0 5px;
     color: #ccc;
     content: "/ ";
+}
+.overOns p{
+    margin-bottom: 0;
+}
+.overOns{
+    margin-left: 10px;
 }

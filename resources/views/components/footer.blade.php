@@ -1,10 +1,15 @@
 
 <footer>
+    <div class="overOns">
+        <h3> Over ons:</h3>
+        <p>Email: jja2007@gmail.com</p>
+        <p>Telefoon: +31 6 2028427</p>
+    </div>
 	© {{ __('misc.copyright') }}
 </footer>
 
 
-<!-- analytics code -->              
+<!-- analytics code -->
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -19,10 +24,10 @@
 </script>
 <!-- Einde analytics code -->
 
-<script language="Javascript" type="text/javascript"> 
- 
- if (top.location!= self.location) { 
+<script language="Javascript" type="text/javascript">
+
+ if (top.location!= self.location) {
   top.location = self.location.href
- } 
- 
+ }
+
 </script>
