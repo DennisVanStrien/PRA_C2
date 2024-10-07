@@ -12,6 +12,8 @@
         </x-slot:title>
     </h1>
 
+    <h2>{{$name}}</h2>
+
 
 
     <?php
