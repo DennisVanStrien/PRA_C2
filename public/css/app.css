@@ -10073,3 +10073,8 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 20px;
     font-weight: 100;
 }
+.itemButton a{
+    outline: black solid 2px;
+    border-radius: 2px;
+    margin: 2px;
+}

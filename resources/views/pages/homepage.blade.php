@@ -40,10 +40,11 @@
                             }
                             $header_first_letter = $current_first_letter
                             ?>
-
-                            <li>
-                                <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/">{{ $brand->name }}</a>
-                            </li>
+                            <div class="itemButton">
+                                <li>
+                                    <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/">{{ $brand->name }}</a>
+                                </li>
+                            </div>
                         @endforeach
                     </ul>
 
