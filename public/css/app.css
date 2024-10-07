@@ -1094,6 +1094,7 @@ pre code {
     .col-md-4 {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%;
+        background-color: #e9ecef;
     }
 
     .col-md-5 {
@@ -4594,6 +4595,7 @@ input[type=button].btn-block {
     color: #6c757d;
     content: "/";
 }
+
 .breadcrumb-item + .breadcrumb-item:hover::before {
     text-decoration: underline;
 }
@@ -10034,6 +10036,8 @@ a.text-dark:hover, a.text-dark:focus {
     list-style: none;
     background-color: #e9ecef;
     border-radius: 0.25rem;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .breadcrumb > li {
