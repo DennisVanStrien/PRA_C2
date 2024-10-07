@@ -1,5 +1,6 @@
 
 <footer>
+    <a href="/contact">Contact</a>
     <div class="overOns">
         <h3> Over ons:</h3>
         <p>Email: jja2007@gmail.com</p>
