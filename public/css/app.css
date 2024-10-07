@@ -10051,3 +10051,21 @@ a.text-dark:hover, a.text-dark:focus {
 .overOns{
     margin-left: 10px;
 }
+.contactForm{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.contactForm input{
+    margin-bottom: 20px;
+}
+.contactForm h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: 100;
+}
