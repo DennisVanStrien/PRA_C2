@@ -1,12 +1,18 @@
 
 <footer>
-    <a href="/contact">Contact</a>
+    <div class="footerBlock">
     <div class="overOns">
         <h3> Over ons:</h3>
-        <p>Email: jja2007@gmail.com</p>
-        <p>Telefoon: +31 6 2028427</p>
+        <p>Mail: jja2007@gmail.com</p>
+        <p>Tel: +31 6 2028427</p>
     </div>
+    <div class="ContactBlock">
+    <a class="ContactLink" href="/contact">Contact</a>
+    </div>
+    <div class="CopyrightBlock">
 	© {{ __('misc.copyright') }}
+    </div>
+    </div>
 </footer>
 
 
