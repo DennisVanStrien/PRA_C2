@@ -10077,8 +10077,12 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 4px;
     display: flex;
     width: 20%;
-    background-color: gray;
+    background-color: rgb(200,200,200);
     margin-bottom: 10px;
+    transition: 1s;
+}
+.linkKnop:hover {
+    transform: scale(1.1); /* Maakt de button iets groter wanneer er overheen gehovet wordt */
 }
 .ContactLink{
     color: white;
