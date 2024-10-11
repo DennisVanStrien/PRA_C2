@@ -4,7 +4,7 @@
     <div class="overOns">
         <h3> Over ons:</h3>
         <p>Mail: jja2007@gmail.com</p>
-        <p>Tel: +31 6 2028427</p>
+        <p>Tel: +31 6 18810902</p>
     </div>
     <div class="ContactBlock">
     <a class="ContactLink" href="/contact">Contact</a>
