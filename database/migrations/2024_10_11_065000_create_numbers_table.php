@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('numbers', function (Blueprint $table) {
             $table->id();
             $table->integer("visits");
-            $table->string("brand");
+            $table->integer("brand_id");
             $table->string("type");
             $table->timestamps();
         });
