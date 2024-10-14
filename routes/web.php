@@ -33,7 +33,6 @@ use App\Http\Controllers\ManualController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocaleController;
-use App\Http\Controllers\ClickController;
 
 // Homepage
 Route::get('/', function () {
@@ -62,6 +61,4 @@ Route::get('/generateSitemap/', [SitemapController::class, 'generate']);
 Route::get('/contact', function () {
     return view('contact');
 });
-
-Route::get('/click', [ClickController::class, 'update']);
 
