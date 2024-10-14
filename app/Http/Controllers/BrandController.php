@@ -20,4 +20,9 @@ class BrandController extends Controller
         ]);
 
     }
+
+    public function update($brand_id, $brand_slug)
+    {
+        // Update brand information
+    }
 }
