@@ -21,11 +21,6 @@ class BrandController extends Controller
 
     }
 
-    public function edit($brand_id, $brand_slug)
-    {
-        // Load brand data for editing
-    }
-
     public function update($brand_id, $brand_slug)
     {
         // Update brand information
