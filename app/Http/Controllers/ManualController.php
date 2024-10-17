@@ -18,17 +18,25 @@ class ManualController extends Controller
             "brand" => $brand,
         ]);
     }
-    public function visits($id){
-    $manual = Manual::findOrFail($id);
 
-    $manual=increment('clicks');
-    dd($manual);
+    public function clicksAndRedirect($id){
+        $manual = Manual::findOrFail($id);
+        $manual->increment('clicks');
 
     if ($manual->locally_available) {
-        return redirect("/{$manual->brand->id}/{$manual->brand->getNameUrlEncodeAttribute()}/{$manual->id}/");
+            return redirect()->away(route('manual.download', $manual->id));
     } else {
-        return redirect($manual->url);
+        return redirect()->away($manual->originUrl);
     }
+}
 
+    public function getTopItems()
+    {
+        $topItems = Manual::orderBy('clicks', 'desc')
+        ->take(5)
+        ->pluck('name');
+
+
+        return view('pages.homepage', compact('topItems'));
     }
 }

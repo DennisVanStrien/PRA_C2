@@ -14,6 +14,9 @@
 
     <h2>{{$name}}</h2>
 
+    @foreach($topItems as $item)
+    <li>{{ $item }}</li>
+    @endforeach
 
 
     <?php
