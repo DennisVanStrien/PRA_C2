@@ -18,4 +18,17 @@ class ManualController extends Controller
             "brand" => $brand,
         ]);
     }
+    public function visits($id){
+    $manual = Manual::findOrFail($id);
+
+    $manual=increment('clicks');
+    dd($manual);
+
+    if ($manual->locally_available) {
+        return redirect("/{$manual->brand->id}/{$manual->brand->getNameUrlEncodeAttribute()}/{$manual->id}/");
+    } else {
+        return redirect($manual->url);
+    }
+
+    }
 }

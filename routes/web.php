@@ -40,6 +40,8 @@ Route::get('/', function () {
     return view('pages.homepage', compact('brands'), ['name' => 'Kenji']);
 })->name('home');
 
+Route::get('/manual/{id}', [ManualController::class, "visits"])->name('clicks.update');
+
 
 Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand']);
 Route::get('/manual/{language}/{brand_slug}/brand.html', [RedirectController::class, 'brand']);
@@ -61,4 +63,5 @@ Route::get('/generateSitemap/', [SitemapController::class, 'generate']);
 Route::get('/contact', function () {
     return view('contact');
 });
+
 
