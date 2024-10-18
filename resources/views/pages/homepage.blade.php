@@ -14,9 +14,11 @@
 
     <h2>{{$name}}</h2>
 
-    @foreach($topItems as $item)
-    <li>{{ $item }}</li>
+    <ol>
+        @foreach($topManuals as $manual)
+        <li>{{ $manual }}</li> <!-- Hier toon je de naam van de manual -->
     @endforeach
+    </ol>
 
 
     <?php

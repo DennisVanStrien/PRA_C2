@@ -30,13 +30,26 @@ class ManualController extends Controller
     }
 }
 
-    public function getTopItems()
+    public function brand()
     {
-        $topItems = Manual::orderBy('clicks', 'desc')
-        ->take(5)
-        ->pluck('name');
-
-
-        return view('pages.homepage', compact('topItems'));
+        return $this->belongsTo(Brand::class);
     }
+
+    public function getTopManuals()
+    {
+        // Haal alle merken op en sorteer ze op naam
+        $brands = Brand::all()->sortBy('name');
+
+        // Haal de top 5 manuals op gesorteerd op aantal clicks
+        $topManuals = Manual::orderBy('clicks', 'desc')->take(10)->pluck('name');
+
+        // Stuur de gegevens naar de view: zowel 'brands', 'topManuals' als 'name'
+        return view('pages.homepage', [
+            'brands' => $brands,
+            'topManuals' => $topManuals, // Gebruik topManuals in plaats van topItems
+            'name' => 'Kenji impact',
+        ]);
+    }
+
+
 }

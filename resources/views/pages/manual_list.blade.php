@@ -19,7 +19,6 @@
                 {{ $manual->name }}
             </a>
         </div>
-            <br />
         @endforeach
     </div>
 
