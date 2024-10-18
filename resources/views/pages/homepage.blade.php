@@ -13,6 +13,7 @@
     </h1>
 
     <h2>{{$name}}</h2>
+    <h2>Top 10 Populairste Manuals</h2>
 
     <ol>
         @foreach($topManuals as $manual)
