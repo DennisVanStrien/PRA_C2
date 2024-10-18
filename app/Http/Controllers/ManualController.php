@@ -50,6 +50,4 @@ class ManualController extends Controller
             'name' => 'Kenji impact',
         ]);
     }
-
-
 }

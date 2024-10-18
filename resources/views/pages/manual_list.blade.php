@@ -9,6 +9,19 @@
     </x-slot:breadcrumb>
 
 
+    <h1>Top Manuals for Brand ID: {{ $brandId }}</h1>
+    <h2>Top 5 Manuals</h2>
+    <ol>
+        @if($topBrandManuals->isNotEmpty())
+            @foreach($topBrandManuals as $manual)
+                <li>{{ $manual->name }}</li> <!-- Toont alleen manuals met het bijbehorende brand_id -->
+            @endforeach
+        @else
+            <li>Geen manuals gevonden voor dit merk.</li>
+        @endif
+    </ol>
+
+
     <h1>{{ $brand->name }}</h1>
 
     <p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name]) }}</p>
