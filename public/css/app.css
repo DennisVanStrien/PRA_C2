@@ -59,17 +59,19 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
 
-.footerBlock{
-    position: fixed;
-    bottom: 0;
-    background-color:#343a40;
-    width: 100%;
+.footerBlock {
+    position: relative; /* Zorgt ervoor dat de footer normaal wordt gepositioneerd */
+    background-color: #343a40;
+    width: 100%; /* Maak de footer pagina breed */
     color: white;
-    left: 0;
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center de inhoud horizontaal */
+    padding: 10px 0; /* Voeg wat padding toe voor een betere opmaak */
 }
+
+
 
 
 body {
