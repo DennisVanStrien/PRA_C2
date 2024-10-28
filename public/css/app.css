@@ -10060,6 +10060,7 @@ a.text-dark:hover, a.text-dark:focus {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 200px;
 }
 .contactForm form{
     display: flex;
