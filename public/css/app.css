@@ -10074,18 +10074,29 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 20px;
     font-weight: 100;
 }
-.linkKnop{
+.linkKnop-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 10px; /* Space between the grid items */
+    margin: 0 auto; /* Centers the grid container */
+    width: 80%; /* Adjust the width as needed */
+}
+
+.linkKnop {
     outline: black solid 2px;
     border-radius: 4px;
-    display: flex;
-    width: 20%;
-    background-color: rgb(200,200,200);
-    margin-bottom: 10px;
+    display: flex; /* Ensure flexbox for centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: rgb(200, 200, 200);
     transition: 1s;
+    padding: 10px; /* Adds some padding inside the button */
+    text-align: center; /* Centers text in the button */
 }
 .linkKnop:hover {
-    transform: scale(1.1); /* Maakt de button iets groter wanneer er overheen gehovet wordt */
+    transform: scale(1.1); /* Scale effect on hover */
 }
+
 .ContactLink{
     color: white;
 }
