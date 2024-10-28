@@ -10092,6 +10092,7 @@ a.text-dark:hover, a.text-dark:focus {
     transition: 1s;
     padding: 10px; /* Adds some padding inside the button */
     text-align: center; /* Centers text in the button */
+    margin-bottom: 10px; /* Adds margin to the bottom of each button */
 }
 .linkKnop:hover {
     transform: scale(1.1); /* Scale effect on hover */
