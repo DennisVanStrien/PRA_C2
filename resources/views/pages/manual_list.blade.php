@@ -26,9 +26,9 @@
 
     <p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name]) }}</p>
 
+    <div class="linkKnop-container">
         @foreach ($manuals as $manual)
         <div class="linkKnop">
-
             <a href="{{ route('manual.redirect', $manual->id) }}" alt="{{ $manual->name }}" title="{{ $manual->name }}" target="{{ $manual->locally_available ? '_self' : '_blank' }}">
                 {{ $manual->name }}
             </a>
