@@ -12,15 +12,17 @@
         </x-slot:title>
     </h1>
 
-    <h2>{{$name}}</h2>
-    <h2>Top 10 Populairste Manuals</h2>
+    <div class="jumbotron">
+        <h2>{{$name}}</h2>
+        <h2>Top 10 Populairste Manuals</h2>
 
-    <ol>
-        @foreach($topManuals as $manual)
-        <li>{{ $manual }}</li> <!-- Hier toon je de naam van de manual -->
-    @endforeach
-    </ol>
+        <ol>
+            @foreach($topManuals as $manual)
+            <li>{{ $manual }}</li>
+        @endforeach
+        </ol>
 
+    </div>
 
     <?php
     $size = count($brands);

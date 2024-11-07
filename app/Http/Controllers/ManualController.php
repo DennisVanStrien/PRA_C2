@@ -47,7 +47,7 @@ class ManualController extends Controller
         return view('pages.homepage', [
             'brands' => $brands,
             'topManuals' => $topManuals, // Gebruik topManuals in plaats van topItems
-            'name' => 'Kenji impact',
+            'name' => 'Kenji en Dennis',
         ]);
     }
 }
